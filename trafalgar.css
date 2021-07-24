@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    padding-top: 60px;
+}
+/* navbar style */
+.navbar{
+    background: #5A98F2;
+}
+.navbar a{
+    color: #fff;
+}
+.navbar-nav{
+    animation: right_moving 1.5s linear .5s forwards;
+    visibility: hidden;
+}
+@keyframes right_moving {
+    0%{
+        transform: translateX(400px);
+    }
+    100%{
+        transform: translateX(0px);
+        visibility: visible;
+    }
+}
+.navbar-brand{
+    animation: left_moving 1.5s linear forwards;
+}
+.banner_text{
+    animation: left_moving 2s linear forwards;
+    visibility: hidden;
+}
+@keyframes left_moving {
+    0%{
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateX(0px);
+        visibility: visible;
+    }
+}
+.banner_img{
+    animation: zoom 1.8s linear forwards;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0.3);
+    }
+    100%{
+       transform: scale(1);
+    }
+}
+
+/* services style */
+.service_title{
+    animation: zoom 1s linear forwards;
+}
+.service_para{
+    animation: zoom2 1s linear .5s forwards;
+    visibility: hidden;
+}
+@keyframes zoom2 {
+    0%{
+        transform: scale(0.3);
+    }
+    100%{
+       transform: scale(1);
+       visibility: visible;
+    }
+}
+
+
+.underline{
+    position: relative;
+}
+.underline::after{
+    content: '';
+    position: absolute;
+    left: 48%;
+    top: 100%;
+    width: 50px;
+    height: 3px;
+    background: #34a2f1;
+}
+.service{
+    height: 350px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 2px 12px 8px rgba(0, 0, 0, 0.178);
+    transition: .5s linear;
+}
+.service:hover i{
+    transform: scale(1.2);
+    color: rgb(216, 15, 235);
+}
+
+.service i{
+    font-size: 4rem;
+    color: #34a2f1;
+    padding-left: 40px;
+    transition: 1s linear;
+}
+.box_1{
+    animation: left_moving 1s linear forwards;
+}
+.box_3{
+    animation: right_moving 1s linear forwards;
+}
+.box_2{
+    animation: zoom 1s linear forwards;
+}
+.article{
+    overflow: hidden;
+    transition: 1s linear;
+}
+.article:hover{
+    transform: translateY(-15px);
+}
+.article img{
+    transition: 1s linear;
+}
+.article:hover img{
+    transform: scale(1.2,1.1);
+}
+footer a{
+    color: #fff;
+}
+
+
+
+
+
